@@ -28,10 +28,11 @@ share.addEventListener("click", async () => {
 });
 
 btn.addEventListener("click", (e) => {
+  music.pause();
   music.currentTime = 0;
+  moye.pause();
   moye.currentTime = 0;
   let value = input.value;
-  console.log(isThala(value));
   if (isThala(value)) {
     document.body.style.backgroundImage =
       "url('https://media1.tenor.com/m/xKeJyC9B4IkAAAAd/bole-jo-koyal.gif')";
